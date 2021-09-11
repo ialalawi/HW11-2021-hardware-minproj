@@ -1,6 +1,6 @@
 lines_seen = set()
 
-with open('hw11_miniproj_data1.txt', 'r+') as f:
+with open('hw11_miniproj_data_modified.txt', 'r+') as f:
     d = f.readlines()
     f.seek(0)
     for i in d:

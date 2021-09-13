@@ -25,7 +25,7 @@ svc = DiscoveryService()
 ble_devs = svc.discover(timeout)
 
 # Create .txt file and write scanning statement to 
-# partiition the BLE scan data in 1 minute time slots/sessions
+# partition the BLE scan data in 1 minute time slots/sessions
 f = open("hw11_miniproj_data.txt", "a")
 f.write(f"Scanning BLE devices for {timeout} seconds" + '\n')
 

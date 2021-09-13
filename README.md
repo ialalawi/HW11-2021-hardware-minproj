@@ -1,5 +1,5 @@
 # EC463 Fall 2021 Hardware Miniproject Team #11
-by Ismaeel AlAlawi and Laith Shamieh.
+by Ismaeel AlAlawi (ENG '22) and Laith Shamieh (ENG '22).
 
 ## Data Collection
 Using our modified ble_scan.py code to detect bluetooth devices with a Raspberry Pi 4B in an area on the Boston University campus:

@@ -1,4 +1,5 @@
 """
+Reads and edit text files to remove any lines that are duplicates & prints number of lines (devices) that are unique
 Example of analyzing scanned Bluetooth Low Energy (BLE) device data from ble_scan.py.
 Reference: newbedev.com
 """

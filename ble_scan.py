@@ -24,12 +24,14 @@ print(f"Scanning BLE devices for {timeout} seconds")
 svc = DiscoveryService()
 ble_devs = svc.discover(timeout)
 
+# Create .txt file and write scanning statement to 
+# partiition the BLE scan data in 1 minute time slots/sessions
 f = open("hw11_miniproj_data.txt", "a")
 f.write(f"Scanning BLE devices for {timeout} seconds" + '\n')
 
 for u, n in ble_devs.items():
-    tup = (u,n)
+    tup = (u,n) # create tuple from BLEs scanned
     print(u, n)
-    f.write(''.join(tup) + '\n') 
+    f.write(''.join(tup) + '\n') # send scanned BLEs to .txt file, each on a line
  
 f.close()

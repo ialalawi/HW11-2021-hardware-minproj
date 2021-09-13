@@ -10,4 +10,11 @@ Using our modified ble_scan.py code to detect bluetooth devices with a Raspberry
 
 After acquiring data from "ble_scan.py" which outputs it into a text file "hw11_miniproj_data.txt", we wrote the python code "ble_analysis.py" which reads the text file and removes the duplicates from the file then summing all the lines up and subtracting 1 (because of the "Scanning BLE devices for 60 seconds" line) to get the total number of people during a 10-minute period. This code also outputs a modified file "hw11_miniproj_data_modified.txt" with no duplicates. 
 
-The python script yields a total number of 466 people (assuming that the ratio of people to BLE scanned devices is perfectly 1:1) within a 10-minute period. 
+Aside from using our "ble_analysis.py" code to analyze the data, it is also possible to use the following direct shell command on the original raw .txt file to confirm the python script is working as intended. 
+
+```
+sort hw11_miniproj_data.txt | uniq -d
+```
+This shell command will sort the data, remove duplicates accordingly – the same way "ble_analysis.py" does – and display the results on the terminal. Thus, it is also expected that if you run it on the modified .txt file, it will not show anything on the command line because all the non-duplicates have been removed using the python script. To test that out, simply use the aforementioned command on "hw11_miniproj_data_modified.txt". 
+
+In conclusion of this Raspberry Bi data collection experiment, the python script yields a total number of 466 people (assuming that the ratio of people to BLE scanned devices is perfectly 1:1) within a 10-minute period. 

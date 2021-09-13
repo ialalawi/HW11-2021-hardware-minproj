@@ -17,4 +17,4 @@ sort hw11_miniproj_data.txt | uniq -d
 ```
 This shell command will sort the data, remove duplicates accordingly – the same way "ble_analysis.py" does – and display the results on the terminal. Thus, it is also expected that if you run it on the modified .txt file, it will not show anything on the command line because all the non-duplicates have been removed using the python script. To test that out, simply use the aforementioned command on "hw11_miniproj_data_modified.txt". 
 
-In conclusion of this Raspberry Bi data collection experiment, the python script yields a total number of 466 people (assuming that the ratio of people to BLE scanned devices is perfectly 1:1) within a 10-minute period. 
+In conclusion of this Raspberry Pi data collection experiment, the python script yields a total number of 466 people (assuming that the ratio of people to BLE scanned devices is perfectly 1:1) within a 10-minute period. 

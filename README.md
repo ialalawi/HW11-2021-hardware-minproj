@@ -2,7 +2,7 @@
 By Ismaeel AlAlawi (ENG '22) and Laith Shamieh (ENG '22).
 
 ## Data Collection
-Using our modified ble_scan.py code to detect bluetooth devices with a Raspberry Pi 4B in an area on the Boston University campus:
+Using SSH to control the Raspberry Pi 4B remotely, we ran our modified ble_scan.py code to detect bluetooth devices in an area on the Boston University campus:
 - Data logging started at 2:45 pm on Saturday September 11th, 2021. 
 - Location: George Sherman Union (GSU), in the dining area in front of the Market, next to the last column in front of the boundary wall separating the supermarket and the dining area
 - Five entries lasting 1 minute each with a 1 minute interval in between 

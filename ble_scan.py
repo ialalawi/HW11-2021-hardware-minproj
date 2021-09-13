@@ -32,6 +32,6 @@ f.write(f"Scanning BLE devices for {timeout} seconds" + '\n')
 for u, n in ble_devs.items():
     tup = (u,n) # create tuple from BLEs scanned
     print(u, n)
-    f.write(''.join(tup) + '\n') # send scanned BLEs to .txt file, each on a line
+    f.write(''.join(tup) + '\n') # send scanned BLEs to .txt file
  
 f.close()
